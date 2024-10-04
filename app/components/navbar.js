@@ -29,11 +29,11 @@ function Navbar() {
 
   const shortenAddress = (address) => {
     if (!address) return "";
-    return `${address.slice(0, 5)}...${address.slice(-4)}`; // Show first 5 and last 4 characters
+    return `${address.slice(0, 5)}...${address.slice(-4)}`; 
   };
 
   return (
-    <nav className="w-full bg-black shadow-md top-0 left-0 right-0">
+    <nav className="w-full bg-[#0a0a0a] shadow-md top-0 left-0 right-0">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}

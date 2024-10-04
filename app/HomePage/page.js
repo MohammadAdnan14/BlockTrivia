@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import Spline from "@splinetool/react-spline"; 
+import Spline from "@splinetool/react-spline";
+import Link from "next/link"; // Import Link from Next.js
 
 function HomePage() {
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-black p-8"> 
+    <div className="relative h-screen flex flex-col justify-center items-center p-8 bg-[#0a0a0a]"> {/* Set background color */}
       <Navbar />
-
       <div className="relative flex flex-col md:flex-row w-full max-w-6xl justify-between items-center h-full z-10">
         
         <div className="flex flex-col gap-6 max-w-md h-full justify-center md:mt-[-100px]">
@@ -17,9 +17,11 @@ function HomePage() {
             "Where Knowledge Meets the Blockchain"
           </span>
           <div className="space-y-4">
-            <button className="px-6 py-3 bg-[#b388ff] text-white font-semibold rounded-lg shadow-lg hover:bg-[#6a0dad] transition duration-300">
-              Get Started
-            </button>
+            <Link href="/Quiz">
+              <button className="px-6 py-3 bg-[#b388ff] text-white font-semibold rounded-lg shadow-lg hover:bg-[#6a0dad] transition duration-300">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -28,6 +30,9 @@ function HomePage() {
             <Spline scene="https://prod.spline.design/64buftY0pHtSHrcH/scene.splinecode" />
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-0 left-0 w-full pointer-events-none">
+        <div className="h-[160px] w-full bg-gradient-to-t from-[#6a0dad] to-[#0a0a0a] opacity-80"></div>
       </div>
     </div>
   );

@@ -7,15 +7,13 @@ import Navbar from '../components/navbar';
 
 export default function AboutUs() {
   return (
-    <div className="relative min-h-screen bg-black flex flex-col justify-between">
+    <div className="relative min-h-screen bg-[#0a0a0a] flex flex-col justify-between"> {/* Updated background color */}
       <Navbar />
       
       <div className="flex flex-col items-center justify-center w-full p-0"> 
         <header className="mb-8 flex justify-center items-center mt-0"> 
           <h1 className="text-xl font-bold uppercase tracking-widest" style={{ color: '#b388ff' }}>About Us</h1>
         </header>
-
-        {/* Grid with 3 cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 w-full p-4">
           {/* Card for Adnan */}
           <a href="#" className="group relative block bg-black">
