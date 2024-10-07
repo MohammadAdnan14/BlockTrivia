@@ -7,7 +7,7 @@ import Navbar from '../components/navbar';
 
 export default function AboutUs() {
   return (
-    <div className="relative min-h-screen bg-[#0a0a0a] flex flex-col justify-between"> {/* Updated background color */}
+    <div className="relative min-h-screen bg-[#0a0a0a] flex flex-col justify-between"> 
       <Navbar />
       
       <div className="flex flex-col items-center justify-center w-full p-0"> 

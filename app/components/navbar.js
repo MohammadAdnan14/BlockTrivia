@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from '../Image/1.png';
+import Logo from '../Image/logo.svg';
 
 function Navbar() {
   const [walletAddress, setWalletAddress] = useState(null);
@@ -35,11 +35,17 @@ function Navbar() {
   return (
     <nav className="w-full bg-[#0a0a0a] shadow-md top-0 left-0 right-0">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="h-14 w-20">
+          <div className="flex-shrink-0">
             <Link href="/">
-              <Image src={Logo} alt="Logo" width={50} height={50} className="h-14 w-auto" />
+              <Image 
+                src={Logo} 
+                alt="Logo" 
+                width={220}  
+                height={80}  
+                className="object-contain"  
+              />
             </Link>
           </div>
 

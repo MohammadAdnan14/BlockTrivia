@@ -17,7 +17,6 @@ export default function Quiz() {
       options: ["Earth", "Mars", "Jupiter", "Saturn"],
       correctAnswer: "Mars"
     },
-    // Add more questions as needed
   ];
 
   const handleAnswerSelect = (answer) => {
@@ -81,7 +80,7 @@ export default function Quiz() {
           {/* Display question */}
           <h3 className="text-xl font-bold mb-4 text-[#6b00b6]">{questions[currentQuestion].question}</h3>
 
-          {/* Display options */}
+          
           <div className="grid gap-4 mb-6">
             {questions[currentQuestion].options.map((option, index) => (
               <label
@@ -97,7 +96,7 @@ export default function Quiz() {
                   onChange={() => handleAnswerSelect(option)}
                   className="mr-2"
                 />
-                <span className="text-black">{option}</span> {/* Set option text color to black */}
+                <span className="text-black">{option}</span> 
               </label>
             ))}
           </div>

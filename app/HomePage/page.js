@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import Spline from "@splinetool/react-spline";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link"; 
 
 function HomePage() {
   return (
-    <div className="relative h-screen flex flex-col justify-center items-center p-8 bg-[#0a0a0a]"> {/* Set background color */}
+    <div className="relative h-screen flex flex-col justify-center items-center p-8 bg-[#0a0a0a]"> 
       <Navbar />
       <div className="relative flex flex-col md:flex-row w-full max-w-6xl justify-between items-center h-full z-10">
         
@@ -14,7 +14,7 @@ function HomePage() {
             BlockTrivia
           </h1>
           <span className="text-2xl font-light text-gray-400 dark:text-[var(--foreground)]"> 
-            "Where Knowledge Meets the Blockchain"
+            "Quiz, Learn, and Earn Onchain"
           </span>
           <div className="space-y-4">
             <Link href="/Quiz">
