@@ -118,7 +118,11 @@ export default function QuizSection() {
         ))}
       </div>
 
-      <h2 className="text-3xl font-bold mt-12 mb-6 text-[#6a0dad] text-center z-10 relative">Create a Quiz</h2> {/* z-10 for visibility */}
+      <h2 className="text-3xl font-bold mt-12 mb-6 text-center z-10 relative">
+  <span className="text-[#6a0dad]">Create a Quiz</span>{' '}
+  <span className="text-white">(Coming Soon!)</span>
+</h2>
+
       <div className="max-w-lg mx-auto bg-white rounded-3xl overflow-hidden shadow-md p-6 transform hover:scale-105 transition-transform duration-300 border-6 border-transparent hover:border-[#b388ff]"> {/* Changed border to 6px */}
         <form>
           <div className="mb-4">
