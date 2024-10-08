@@ -8,21 +8,91 @@ export default function Quiz() {
 
   const questions = [
     {
-      question: "What is the capital of France?",
-      options: ["Paris", "London", "Rome", "Berlin"],
-      correctAnswer: "Paris"
+      question: "What is Solana?",
+      options: [
+        { text: "A programming language", correct: false },
+        { text: "A blockchain platform", correct: true },
+        { text: "A cryptocurrency wallet", correct: false }
+      ]
     },
     {
-      question: "Which planet is known as the Red Planet?",
-      options: ["Earth", "Mars", "Jupiter", "Saturn"],
-      correctAnswer: "Mars"
+      question: "Which consensus mechanism does Solana use?",
+      options: [
+        { text: "Proof of Stake", correct: false },
+        { text: "Proof of Work", correct: false },
+        { text: "Proof of History", correct: true }
+      ]
     },
+    {
+      question: "What is the native cryptocurrency of the Solana blockchain?",
+      options: [
+        { text: "SOL", correct: true },
+        { text: "ETH", correct: false },
+        { text: "BTC", correct: false }
+      ]
+    },
+    {
+      question: "Which of the following is a feature of Solana?",
+      options: [
+        { text: "High throughput and low fees", correct: true },
+        { text: "Slow transaction speeds", correct: false },
+        { text: "High energy consumption", correct: false }
+      ]
+    },
+    {
+      question: "What is the function of Solana validators?",
+      options: [
+        { text: "To mine new SOL tokens", correct: false },
+        { text: "To verify and validate transactions", correct: true },
+        { text: "To create smart contracts", correct: false }
+      ]
+    },
+    {
+      question: "Which programming language is used to write smart contracts on Solana?",
+      options: [
+        { text: "Python", correct: false },
+        { text: "Rust", correct: true },
+        { text: "Solidity", correct: false }
+      ]
+    },
+    {
+      question: "Which of the following wallets supports Solana?",
+      options: [
+        { text: "Phantom", correct: true },
+        { text: "Metamask", correct: false },
+        { text: "Ledger", correct: false }
+      ]
+    },
+    {
+      question: "What is the TPS (Transactions per Second) target for Solana?",
+      options: [
+        { text: "10", correct: false },
+        { text: "1,000", correct: false },
+        { text: "65,000+", correct: true }
+      ]
+    },
+    {
+      question: "What is the primary use case of Solana?",
+      options: [
+        { text: "Gaming", correct: false },
+        { text: "Fast, scalable decentralized applications", correct: true },
+        { text: "File storage", correct: false }
+      ]
+    },
+    {
+      question: "Which year was the Solana mainnet launched?",
+      options: [
+        { text: "2019", correct: false },
+        { text: "2020", correct: true },
+        { text: "2021", correct: false }
+      ]
+    }
   ];
 
-  const handleAnswerSelect = (answer) => {
+  const handleAnswerSelect = (option) => {
     setAnswers({
       ...answers,
-      [currentQuestion]: answer
+      [currentQuestion]: option,
     });
   };
 
@@ -44,7 +114,7 @@ export default function Quiz() {
   const calculateScore = () => {
     let points = 0;
     questions.forEach((question, index) => {
-      if (answers[index] === question.correctAnswer) {
+      if (answers[index]?.correct) {
         points += 1;
       }
     });
@@ -80,7 +150,6 @@ export default function Quiz() {
           {/* Display question */}
           <h3 className="text-xl font-bold mb-4 text-[#6b00b6]">{questions[currentQuestion].question}</h3>
 
-          
           <div className="grid gap-4 mb-6">
             {questions[currentQuestion].options.map((option, index) => (
               <label
@@ -91,12 +160,12 @@ export default function Quiz() {
                 <input
                   type="radio"
                   name={`question-${currentQuestion}`}
-                  value={option}
-                  checked={answers[currentQuestion] === option}
+                  value={option.text}
+                  checked={answers[currentQuestion]?.text === option.text}
                   onChange={() => handleAnswerSelect(option)}
                   className="mr-2"
                 />
-                <span className="text-black">{option}</span> 
+                <span className="text-black">{option.text}</span>
               </label>
             ))}
           </div>

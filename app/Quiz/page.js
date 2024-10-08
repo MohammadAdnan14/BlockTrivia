@@ -48,7 +48,7 @@ export default function QuizSection() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-4 text-[#6a0dad]">General Knowledge Quiz</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#6a0dad]">Solana Quiz</h3>
               <div className="flex items-center mb-4">
                 <FaTrophy className="h-6 w-6 text-yellow-500 mr-2" />
                 <span className="text-xl font-semibold text-[#6a0dad]">10 USDC</span>

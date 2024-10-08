@@ -1,19 +1,82 @@
 [
-    {
-      "question": "What is 2 + 2?",
-      "options": [
-        { "text": "3", "correct": false },
-        { "text": "4", "correct": true },
-        { "text": "5", "correct": false }
-      ]
-    },
-    {
-      "question": "What is the capital of France?",
-      "options": [
-        { "text": "Berlin", "correct": false },
-        { "text": "Madrid", "correct": false },
-        { "text": "Paris", "correct": true }
-      ]
-    }
-  ]
-  
+  {
+    "question": "What is Solana?",
+    "options": [
+      { "text": "A programming language", "correct": false },
+      { "text": "A blockchain platform", "correct": true },
+      { "text": "A cryptocurrency wallet", "correct": false }
+    ]
+  },
+  {
+    "question": "Which consensus mechanism does Solana use?",
+    "options": [
+      { "text": "Proof of Stake", "correct": false },
+      { "text": "Proof of Work", "correct": false },
+      { "text": "Proof of History", "correct": true }
+    ]
+  },
+  {
+    "question": "What is the native cryptocurrency of the Solana blockchain?",
+    "options": [
+      { "text": "SOL", "correct": true },
+      { "text": "ETH", "correct": false },
+      { "text": "BTC", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is a feature of Solana?",
+    "options": [
+      { "text": "High throughput and low fees", "correct": true },
+      { "text": "Slow transaction speeds", "correct": false },
+      { "text": "High energy consumption", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the function of Solana validators?",
+    "options": [
+      { "text": "To mine new SOL tokens", "correct": false },
+      { "text": "To verify and validate transactions", "correct": true },
+      { "text": "To create smart contracts", "correct": false }
+    ]
+  },
+  {
+    "question": "Which programming language is used to write smart contracts on Solana?",
+    "options": [
+      { "text": "Python", "correct": false },
+      { "text": "Rust", "correct": true },
+      { "text": "Solidity", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following wallets supports Solana?",
+    "options": [
+      { "text": "Phantom", "correct": true },
+      { "text": "Metamask", "correct": false },
+      { "text": "Ledger", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the TPS (Transactions per Second) target for Solana?",
+    "options": [
+      { "text": "10", "correct": false },
+      { "text": "1,000", "correct": false },
+      { "text": "65,000+", "correct": true }
+    ]
+  },
+  {
+    "question": "What is the primary use case of Solana?",
+    "options": [
+      { "text": "Gaming", "correct": false },
+      { "text": "Fast, scalable decentralized applications", "correct": true },
+      { "text": "File storage", "correct": false }
+    ]
+  },
+  {
+    "question": "Which year was the Solana mainnet launched?",
+    "options": [
+      { "text": "2019", "correct": false },
+      { "text": "2020", "correct": true },
+      { "text": "2021", "correct": false }
+    ]
+  }
+]
